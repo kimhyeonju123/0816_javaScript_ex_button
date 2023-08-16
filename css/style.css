@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrap {
+  width: 400px;
+  height: 400px;
+  border: 10px solid black;
+  padding: 40px;
+}
+#wrap div {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+}
+#wrap.on div {
+  background-color: pink;
+}
+
+.btns {
+  margin: 50px;
+}
+.btns::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.btns li {
+  float: left;
+  margin-right: 20px;
+  font: bold 15px/1 "arial";
+  color: #555;
+  padding: 10px;
+  border: 1px solid #aaa;
+  cursor: pointer;
+}
+.btns li.on {
+  background-color: #555;
+  color: #fff;
+}
+
+section {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 50px;
+  position: relative;
+}
+section article {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font: bold 100px/200px "arial";
+  text-align: center;
+  opacity: 0;
+  transform: rotateY(100deg);
+  transition: 0.5s;
+}
+section article.on {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+/*# sourceMappingURL=style.css.map */
